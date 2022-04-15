@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="辗转相除法, HTML,CSS,JavaScript,JQuery,React,Vue.js，java等">
-    <meta name="description" content=" 辗转相除法，是求最大公约数的一种方法。它的具体做法是：用较大数除以较小数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。最后的除数就是这两个数的最大公约数。
-例如   10 和">
+    <meta name="keywords" content="Java生成验证码, HTML,CSS,JavaScript,JQuery,React,Vue.js，java等">
+    <meta name="description" content="import java.util.Random;
+import java.util.Scanner;
+ 
+public class 验证码 &amp;#123;
+    public static void main(String[] args) ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +23,7 @@
 
     
 
-    <title>辗转相除法 | ctc的编程小屋</title>
+    <title>Java生成验证码 | ctc的编程小屋</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -247,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">辗转相除法</h1>
+                    <h1 class="description center-align post-title">Java生成验证码</h1>
                 </div>
             </div>
         </div>
@@ -368,8 +371,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
                             </a>
                         
                     </div>
@@ -380,8 +383,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
+                            <a href="/categories/function/" class="post-category">
+                                function
                             </a>
                         
                     </div>
@@ -402,7 +405,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    199
+                    111
                 </div>
                 
 
@@ -422,33 +425,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> 辗转相除法，是求最大公约数的一种方法。它的具体做法是：用较大数除以较小数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。最后的除数就是这两个数的最大公约数。</p>
-<p>例如   10 和 5       40 和 30</p>
-<p>10&#x2F;5&#x3D;2—–0         5为最大公约数</p>
-<p>40&#x2F;30&#x3D;1—-10      30&#x2F;10&#x3D;3—0    10为最大公约数</p>
-<p>代码如下：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+                <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Random</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
  
-<span class="token keyword">public</span> <span class="token keyword">class</span> demo01 <span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> 验证码 <span class="token punctuation">&#123;</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
         <span class="token class-name">Scanner</span> scanner <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">long</span> a <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">long</span> b <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- 
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token function">gcd</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token function">createCode</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
  
     <span class="token punctuation">&#125;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">long</span> <span class="token function">gcd</span><span class="token punctuation">(</span><span class="token keyword">long</span> a<span class="token punctuation">,</span> <span class="token keyword">long</span> b<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">createCode</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token class-name">String</span> str <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+        <span class="token class-name">Random</span> random <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">switch</span> <span class="token punctuation">(</span>random<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>  <span class="token comment">//大写字母</span>
+                    <span class="token keyword">char</span> <span class="token class-name">A</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>random<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token number">26</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">65</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    str<span class="token operator">+=</span><span class="token class-name">A</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>  <span class="token comment">//小写字母</span>
+                    <span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>random<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token number">26</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">97</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    str<span class="token operator">+=</span>a<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>  <span class="token comment">//数字</span>
+                    str<span class="token operator">+=</span>random<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
         <span class="token punctuation">&#125;</span>
-        <span class="token keyword">return</span> <span class="token function">gcd</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> str<span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
- 
-<span class="token punctuation">&#125;</span>
- <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>​	</p>
 
                 
             </div>
@@ -475,7 +484,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ctcnb1.github.io/2022/04/15/zhan-zhuan-xiang-chu-fa/">https://ctcnb1.github.io/2022/04/15/zhan-zhuan-xiang-chu-fa/</a>
+                    <a href="https://ctcnb1.github.io/2022/04/15/java-sheng-cheng-yan-zheng-ma/">https://ctcnb1.github.io/2022/04/15/java-sheng-cheng-yan-zheng-ma/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -513,8 +522,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
                                 </a>
                             
                         </div>
@@ -692,13 +701,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/04/15/java-sheng-cheng-yan-zheng-ma/">
+                <a href="/2022/04/15/java-xian-cheng-de-chuang-jian-san-chong-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Java生成验证码">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Java线程的创建三种方法">
                         
-                        <span class="card-title">Java生成验证码</span>
+                        <span class="card-title">Java线程的创建三种方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -715,8 +724,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/function/" class="post-category">
-                                    function
+                            <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-category">
+                                    知识点
                                 </a>
                             
                             
@@ -741,13 +750,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/14/hello-world/">
+                <a href="/2022/04/15/zhan-zhuan-xiang-chu-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="辗转相除法">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">辗转相除法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -758,15 +767,27 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-15
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ctc
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
                 </div>
                 
             </div>
